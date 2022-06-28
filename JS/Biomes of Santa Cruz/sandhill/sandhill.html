@@ -1,0 +1,209 @@
+<!-- Sandhill Biome page -->
+
+
+<!DOCTYPE html>
+
+<style>
+	
+	body {
+
+  		background-color: black;
+  		
+	}
+
+	.centered {
+
+	  position: absolute;
+	  top: 55%;
+	  left: 55%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-buckwheat {
+
+	  position: absolute;
+	  top: 75%;
+	  left: 55%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-rat {
+
+	  position: absolute;
+	  top: 60%;
+	  left: 45%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-spineflower {
+
+	  position: absolute;
+	  top: 48%;
+	  left: 25%;
+	  right: 45%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-manzanita {
+
+	  position: absolute;
+	  top: 55%;
+	  left: 55%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.boxstyle { 
+
+		color: #2f4858 !important;
+  		background-color: #dda15e !important;
+  		font-family: Trebuchet MS, sans-serif !important;
+
+	 };
+
+</style>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+		<title>Sandhill Biome Page</title>
+
+		<script src="../js/sandhill.js" defer></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	</head>
+
+<body onload = "sandhillInit()">
+
+	<div>
+
+		<img id = "sandhill-image" src="../img/sandhill.png" alt="Workplace" usemap="#mymap" onclick = "introHide()">
+
+		<map name = "mymap">
+
+			<!-- Left Plant  -->
+			<area id = "buckwheat-map" shape="poly" coords="47 , 431 , 316 , 759 , 285 , 886 , 0 , 863 , " href="buckwheat.html">
+			<!-- Middle plant  -->
+			<area id = "spineflower-map" shape="poly" coords="643 , 404 , 785 , 320 , 873 , 349 , 891 , 473 , 662 , 471" href="spineflower.html">
+			<!-- Mouse thing  -->
+			<area id = "rat-map" shape="poly" coords="697 , 840 , 893 , 738 , 943 , 782 , 880 , 854" href="kangaroo-rat.html">
+			<!--  Right shrub -->
+			<area id = "manzanita-map" shape="poly" coords="1246 , 478 , 1435 , 262 , 1579 , 337 , 1578 , 543 , 1484 , 670 " href="silverleaf-manzanita.html">
+
+		</map>
+
+		<!-- All the content  -->
+
+		<div id = "intro-div" class = "centered boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+		    <h1>Sand Hill / Chaparral Biome</h1>
+
+		    <div id = "output-weather"></div>
+
+			<p>This biome is typically located where cool, moist air from the ocean hits dry, warm land , usually along the west coast, creating this somewhat arid mediterranean climate.It consists of hot-dry summers and mild and rainy winters.</p>
+
+			<p><strong>Please play the Field Recording with the controls below.</strong></p>
+
+			<audio controls>
+
+				<source src = "../aud/Sandhill.mp3" type="audio/mpeg">
+
+			</audio>
+
+			<br>
+			<br>
+
+			<p><strong>Click anywhere outside this box to expore!</strong></p>
+
+			<br>
+
+			<p>Works Cited: “Chaparral Biome.” World Biomes | The Wild Classroom, https://thewildclassroom.com/biomes/chaparral/. </p>
+
+		</div>
+
+		<div id = "buckwheat-div" class = "centered-buckwheat boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+			<h1>Ben Lomond Buckwheat</h1>
+
+		    <hr>
+
+		    <p>Ben Lomond buckwheat blooms between June and September, producing thick heads of tiny white flowers. It can be found within canopy gaps in sand chaparral, as well as a variety of microhabitats within sand parkland.Like many other Sandhills plants, the Ben Lomond buckwheat has white hairs on its leaves that reflect excess sunlight and reduce water loss, which makes it capable of adapting to life in the hot, arid Sandhills. The ongoing loss and degradation of Sandhills habitat has led to the California Native Plant Society listing this Sandhills native one of California's most rare and endangered plants.</p>
+
+		    <h3>Interesting Fact:</h3>
+
+		    <p> Ben Lomond buckwheat is a perennial herb so it has the potential to have a lifespan of at least more than two years.</p>
+
+		    <h5>Works Cited:</h5>
+
+		    <p>McGraw, Jodi. “Endemic Plants of the Santa Cruz Sandhills.” Sandhills Alliance for Natural Diversity, <a href="url">www.santacruzsandhills.com/endemic_plants.html#scw</a></p>
+
+		</div>
+
+		<div id = "spineflower-div" class = "centered-spineflower boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+			<h1>Ben Lomond Spineflower</h1>
+
+		    <hr>
+
+		    <p>Named for the spiny bracts surrounding its flowers, this native plant inhabits various areas within sand chaparral.The Ben Lomond spineflower can be very abundant in the local region, turning the soil surface pink when it flowers in April and May. This plant is naturally rare, due to its small geographic range (Santa Cruz County) and narrow habitat specificity (Zayante soils). The existence of the Ben Lomond spineflower is threatened by habitat loss as well as habitat degradation due to fire exclusion, exotic plants, and recreation. Therefore, this  plant is considered endangered by the United States Fish and Wildlife Service.</p>
+		    
+		    <h3>Interesting Fact: </h3>
+
+		    <p>The spineflower only grows in Santa Cruz  Sandhills (only California) primarily because it can not handle shade of any kind and needs to be consistently in direct sunlight.</p>
+
+		    <h5>Works Cited</h5>
+
+		    <p>“Endangered Species.” Endangered Species in Santa Cruz County - Santa Cruz Public Libraries
+		    McGraw, Jodi. “Endemic Plants of the Santa Cruz Sandhills.” Sandhills Alliance for Natural Diversity, <a href="url">www.santacruzsandhills.com/endemic_plants.html#scw</a></p>
+
+		</div>
+
+		<div id = "rat-div" class = "centered-rat boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+			<h1>Santa Cruz Kangaroo Rat</h1>
+
+		    <hr>
+
+		    <p>The Santa Cruz kangaroo rat is a small rodent that is found only in the Santa Cruz Sandhills. More closely related to gophers than true rats, the Santa Cruz kangaroo rat earned its name because it hops on its two large, hind legs. At night, this rare animal emerges from burrows in the sand chaparral community to gather seeds in its cheek pouches, which it then stores in seed caches.Recent research found that three of four Santa Cruz kangaroo rat populations known to occur in 1984 have become extirpated (locally extinct).</p>
+
+		    <h3>Interesting Fact:</h3>
+
+		    <p>The kangaroo rat’s unique metabolism and specialized kidneys allow it to survive without consuming fresh water or eating leaves with moisture. It also has something like a natural humidifier in its underground den as a result of the moisture from its breath that keeps its den moist which then allows moisture to be reabsorbed by the rat with the help of its specialized organ in its nasal passage.
+		    </p>
+
+		    <h5>Works Cited:</h5>
+
+		    <p>“Kangaroo Rat.” Visit California, 9 July 2018, www.visitcalifornia.com/uk/attraction/kangaroo-rat.
+		    McGraw, Jodi. “Endemic Animals of the Sandhills.” Sandhills Alliance for Natural Diversity, 2005, <a href="url">www.santacruzsandhills.com/endemic_animals.html</a></p>
+
+		</div>
+
+		<div id = "manzanita-div" class = "centered-manzanita boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+		    <h1>Silverleaf (Bonny Doon) Manzanita</h1>
+
+		    <hr>
+
+		    <p>Silverleaf (or Bonny Doon) manzanita is a large shrub that is named for the region where it is especially abundant and the silver-like color of its leaves, which reflect excess sunlight and reduces water loss.This plant blooms in  November and January, producing dense clusters of small, urn-shaped flowers.Silverleaf manzanita is the dominant plant of sand chaparral. However, habitat loss and degradation still threaten the survival of this plant, which is recognized by the California Native Plant Society as an endangered plant species in California.</p>
+		    
+		    <h3>Interesting Fact:</h3>
+
+		    <p> The Silverleaf Manzanitas fruits resemble small red apples which is why it is called “manzanita,” because it means “little apple” in Spanish.</p>
+
+		    <h5>Works Cited:</h5>
+
+		    <p>McGraw, Jodi. “Endemic Plants of the Santa Cruz Sandhills.” Sandhills Alliance for Natural Diversity, <a href="url">www.santacruzsandhills.com/endemic_plants.html#scw</a></p>
+
+		</div>						
+
+	</div>
+
+</body>

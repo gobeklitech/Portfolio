@@ -1,0 +1,233 @@
+<!-- Wetlands biome content-->
+
+
+<!DOCTYPE html>
+
+<style>
+	
+	body {
+  		background-color: black;
+	}
+
+	.centered {
+
+	  position: absolute;
+	  top: 55%;
+	  left: 55%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-tule {
+
+	  position: absolute;
+	  top: 55%;
+	  left: 55%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-frog {
+
+	  position: absolute;
+	  top: 35%;
+	  left: 65%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-waterfowl {
+
+	  position: absolute;
+	  top: 70%;
+	  left: 46%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-rush {
+
+	  position: absolute;
+	  top: 35%;
+	  left: 45%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-willow {
+
+	  position: absolute;
+	  top: 45%;
+	  left: 55%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.boxstyle { 
+
+		color: #ede0d4 !important;
+ 		background-color: #7f5539 !important;
+ 		font-family: Trebuchet MS, sans-serif !important;
+
+	 };
+
+</style>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Art 101 Project Prototype</title>
+
+		<script src="../js/project.js" defer></script>
+
+		<script src="../js/wetlands.js" defer></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	</head>
+
+<body onload = "wetlandsInit()">
+
+	<div class = "container">
+
+		<img id = "wetlands-image" src="../img/wetlands.png" alt="Workplace" usemap="#mymap" onclick = "introHide()">
+
+		<map name = "mymap">
+			<!-- Left Plant -->
+			<area class = "biome-map" id = "tule-map" shape="poly" coords="130 , 332 , 306 , 380 , 214 , 620 , 46 , 548 , 44, 444" href="tule.html">
+			<!-- Frog  -->
+			<area id = "frog-map" shape="poly" coords="405 , 496 , 532 , 603 , 533 , 683 , 403 , 679" href="red-legged-frog.html">
+			<!-- Middle plant  -->
+			<area id = "rush-map" shape="poly" coords="705 , 491 , 941 , 488 , 1064 , 668 , 1063 , 883 , 705 , 851" href="common-rush.html">
+			<!-- Duck  -->
+			<area id = "waterfowl-map" shape="poly" coords="969 , 202 , 1071 , 236 , 1101 , 106 , 1230 , 234 , 1099 , 365" href="water-fowl.html">
+			<!-- Right Plant  -->
+			<area id = "willow-map" shape="poly" coords="1316 , 619 , 1428 , 485 , 1558 , 854 , 1366 , 856" href="willow-herb.html">
+
+		</map>
+
+		<!-- All the content  -->
+
+		<div id = "intro-div" class = "centered boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+		    <h1>Wetlands Biome</h1>
+
+		    <div id = "output-weather"></div>
+
+			<p>A wetland is a portion of land that is either covered by water or saturated with water, usually groundwater. Wetlands are transition zones, which are areas that are neither totally dry nor totally underwater; they have characteristics of both.</p>
+
+			<p><strong>Please play the Field Recording with the controls below.</strong></p>
+
+			<audio controls>
+
+				<source src = "../aud/Wetlands.mp3" type="audio/mpeg">
+
+			</audio>
+
+			<br>
+			<br>
+
+			<p><strong>Click anywhere outside this box to expore!</strong></p>
+
+			<br>
+
+			<p>Works Cited: Evers, Jeannie. “Wetland.” National Geographic Society, 9 Oct. 2012, www.nationalgeographic.org/encyclopedia/wetland/. </p>
+
+		</div>
+
+		<!--  -->
+
+		<div id = "tule-div" class = "centered-tule boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+		    <h1>Tule</h1>
+
+		    <hr>
+
+		    <p>These plants grow in calm or still fresh water. They have a long stem that can grow up to 12 feet. The seeds grow at the tips of the stems, which are filled with white spongy tissue. Their flowers bloom from April to June.</p>
+
+		    <h3>Interesting Fact:</h3>
+
+		    <p> Tules were used for food wrapping, just like plastic-wrap is used today.</p>
+
+		    <h5>Works Cited:</h5>
+
+		    <p>“Plant Guide.” Watsonville Wetlands Watch, 2022 Watsonville Wetlands Watch, <a href="url">www.watsonvillewetlandswatch.org/plant-guide</a></p>
+
+		</div>
+
+		<!--  -->
+
+		<div id = "waterfowl-div" class = "centered-waterfowl boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+			<h1>Water Fowl of Santa Cruz</h1>
+
+		    <hr>
+
+		    <p>Waterfowl are all types of ducks, geese, and swans. They are mid-sized to large birds most commonly found on or near water. Most have plump bodies, long necks, short wings, and all have webbed feet. Geese tend to be larger than ducks with shorter bills and swans are even bigger with long necks and are usually white.Male ducks are typically more colorful than females during the breeding season.</p>
+
+		    <h3>Interesting Fact:</h3>
+
+		    <p> Most waterfowl fly at speeds of 40 to 60 mph!</p>
+
+		    <h5>Works Cited:</h5>
+
+		    <p>Paws. “Waterfowl.” PAWS, <a href="url">www.paws.org/resources/waterfowl/.<a>
+		    “Waterfowl Habitat.” World Leader in Wetlands & Waterfowl Conservation, Wetland Conservation, <a href="url">www.ducks.org/conservation/waterfowl-habitat</a></p>
+		
+		</div>  
+
+		<div id = "willow-div" class = "centered-willow boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+		    <h1>Willow Herb</h1>
+
+		    <p>Willowherb is a loosely clumping plant typically with more than one stem from the roots that branch in the upper portion. The mature plant can grow to about 6-1/2 feet tall. Leafy rosettes are usually found at the base of the plant. Flowers have four, white to violet-pink notched petals, which are produced at the end of long, slender stalks that attach along the flowering stem forming a flower head. Its flowers bloom from June to September.</p>
+
+		    <h3>Interesting Fact:</h3>
+
+		    <p> The Willow Herb was used by certain Native Americans as hair conditioner and to help manage dandruff.</p>
+
+		    <h5>Works Cited:</h5>
+
+		    <p>“Plant Guide.” Watsonville Wetlands Watch, 2022 Watsonville Wetlands Watch, www.watsonvillewetlandswatch.org/plant-guide.
+		    “Willowherbs  ( Epilobium Ciliatum, E. Brachycarpum).” Weed Gallery: Willowherbs--UC IPM, 2016 Regents of the University of California, <a href="url">ipm.ucanr.edu/PMG/WEEDS/willowherbs.html</a></p>
+		
+		</div> 		  
+
+
+		<div id = "frog-div" class = "centered-frog boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+		    <h1>Red Legged Frog</h1>
+
+		    <hr>
+
+		    <p>The Red Legged Frog is a federally threatened species which is the result of a few different factors which include : A large culinary demand for frog’s legs in the mid 1800s which led to them being harvested, widespread draining of ponds and wetlands for development and agriculture over the past 150 years, and the introduction of non-native plants and animals such as the bullfrog and fish that prey on the frogs. In adults, the bellies and undersides of the hind legs are red or salmon pink; backs are brownish and flecked with spots. Young frogs have more pronounced dorsal spotting, and may have yellow, not red, on the underside of the legs.</p>
+
+		    <h5>Interesting Fact:</h5><p> These are the largest native frogs in the American West, the red-legged frog can be five inches long.</p>
+
+		    <h5>Works Cited:</h5>
+
+		    <p>“California Red-Legged Frogs.” National Parks Service, U.S. Department of the Interior, www.nps.gov/rlc/pacificcoast/california-red-legged-frogs.htm#:~:text=The%20federally%20threatened%20California%20red,County%20south%20to%20San%20Simeon.
+		    Draytoni, Rana. “Natural History.” Natural History: California Red Legged Frog, Center for Biological Diversity, <a href="url">www.biologicaldiversity.org/species/amphibians/California_red-legged_frog/natural_history</a></p>
+
+		</div> 	
+
+		<div id = "rush-div" class = "centered-rush boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+	      <h1>Common Rush</h1>
+
+	      <hr>
+
+	      <p>This rush has a rounded stem and grows in clumps. It grows about 8–18 inches tall. The flower clusters are brown to tannish and are about 7 cm (1.5 inches) long.It can typically be found on moist slopes.Its flowers bloom from April to May.</p>
+	      
+	      <h3>Interesting Fact:</h3><p> The main part of the plant you see is the round stem. The leaves are small and grow at the base of the plant.</p>
+
+	      <h5>Works Cited:</h5>
+
+	      <p>“Plant Guide.” Watsonville Wetlands Watch, 2022 Watsonville Wetlands Watch, <a href="url">www.watsonvillewetlandswatch.org/plant-guide</a></p>
+	      
+		</div> 		
+		
+	</div>
+
+</body>

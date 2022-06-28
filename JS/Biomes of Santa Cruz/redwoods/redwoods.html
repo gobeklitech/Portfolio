@@ -1,0 +1,248 @@
+<!-- Redwoods biome  -->
+
+
+<!DOCTYPE html>
+
+<style>
+	
+	body {
+
+  		background-color: black;
+
+	}
+
+	.centered {
+
+	  position: absolute;
+	  top: 55%;
+	  left: 55%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-bay {
+
+	  position: absolute;
+	  top: 75%;
+	  left: 55%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-deer {
+
+	  position: absolute;
+	  top: 70%;
+	  left: 65%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-coyote {
+
+	  position: absolute;
+	  top: 30%;
+	  left: 45%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-poison-oak {
+
+	  position: absolute;
+	  top: 30%;
+	  left: 40%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-woodpecker {
+
+	  position: absolute;
+	  top: 60%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.centered-foamflower {
+
+	  position: absolute;
+	  top: 55%;
+	  left: 55%;
+	  transform: translate(-50%, -50%);
+
+	}
+
+	.boxstyle { 
+
+		color: #2f4858 !important;
+  		background-color: #bfdbf7 !important;
+  		font-family: Trebuchet MS, sans-serif !important;
+
+	 };
+
+</style>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Redwoods Biome Page</title> 
+
+		<script src="../js/redwoods.js" defer></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	</head>
+
+<body onload = "redwoodsInit()">
+
+	<div>
+
+		<img id = "redwoods-image" src="../img/redwoods.png" alt="Workplace" usemap="#mymap" onclick="introHide()">
+
+		<map name = "mymap">
+			<!-- Woodpecker  -->
+			<area id = "woodpecker-map" shape="poly" coords="1055 , 142 , 1111 , 80 , 1176 , 114 , 1093 , 254" href="redwoods-info.html"> 
+			<!-- Deer  -->
+			<area id = "deer-map" shape="poly" coords="272 , 220 , 364 , 280 , 469 , 212 , 391 , 400 , 467 , 397 , 543 , 482 , 310 , 464 , 308 , 357" href="redwoods-info.html">
+			<!-- Coyote  -->
+			<area id = "coyote-map" shape="poly" coords="704 , 502 , 797 , 566 , 869 , 499 , 872 , 726 , 777 , 735 , 727 , 886 , 241 , 886 , 266 , 780 , 393 , 631 , 738 , 601" href="redwoods-info.html">
+			<!-- Poison Oak -->
+			<area id = "poison-oak-map" shape="poly" coords="1013 , 419 , 1115 , 441 , 1079 , 730 , 971 , 668" href="redwoods-info.html">
+			<!-- Plant on right -->
+			<area id = "bay-map" shape="poly" coords="1239 , 481 , 1553 , 368 , 1550 , 883 , 1229 , 740" href="redwoods-info.html">
+			<!-- Plant on left -->
+			<area id = "foamflower-map" shape="poly" coords="36 , 290 , 157 , 412 , 185 , 885 , 0 , 880" href="redwoods-info.html">
+
+		</map>
+
+		<div id = "intro-div" class = "centered boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+		    <h1>Henry Cowell Redwoods</h1>
+
+		    <div id = "output-weather"></div>
+
+			<p>Located in the Santa Cruz mountains, the Henry Cowell Redwoods are a 40 acre grove of old redwood trees towering overhead. Within this biome, there exists a variety and wide biodiversity of animal and plant species, all living in symphony with one another, feeding off each other in a cyclical season of life and death. Animals such as the coyote, and the black tailed deer, feed upon the natural resources of this land, and allow the redwoods to prosper. </p>
+
+			<p><strong>Please play the Field Recording with the controls below.</strong></p>
+
+			<audio controls>
+
+				<source src = "../aud/Redwoods.mp3" type="audio/mpeg">
+
+			</audio>
+
+			<br>
+			<br>
+
+			<p><strong>Click anywhere outside this box to expore!</strong></p>
+
+			<br>
+
+			<p>Works Cited: Evers, Jeannie. “Wetland.” National Geographic Society, 9 Oct. 2012, www.nationalgeographic.org/encyclopedia/wetland/. </p>
+
+		</div>
+
+		<div id = "woodpecker-div" class = "centered-woodpecker boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+			<h1>Pileated Woodpecker</h1>
+
+		    <p>Dryocopus Pileatus, also known as the Southern Pileated Woodpecker, is a small aviary ranging from 40-49 cm in length, and 66-75 cm in wingspan. They are primarily insectivores, preying on carpenter ants, and wood boring beetles. However, they also include fruits, berries, seeds and other plant life within their diets. Behaviourally, they utilise their beaks in order to chip roughly rectangular holes to hunt insects hiding within trees.</p>
+
+		    <h3>Fun Fact</h3>
+
+		    <p>Woodpeckers can peck up to 20 times per second, or a total of 8,000-12,000 pecks per day.</p>
+
+		    <h5>Works Cited:</h5>
+
+		    <p>“Pileated Woodpecker Overview, All about Birds, Cornell Lab of Ornithology.” Overview, All About Birds, Cornell Lab of Ornithology,  <a href="url">https://www.allaboutbirds.org/guide/Pileated_Woodpecker/overview. </a></p>
+
+
+		</div>
+
+		<div id = "deer-div" class = "centered-deer boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+			<h1>Black tailed Deer</h1>
+
+		    <p>Odocoileus Hemonius, the Black tailed Deer is a classification which includes two forms of mule deer subspecies under its taxonomy. The Odocoileus Hemonis Columbianus, native to the Santa Cruz mountains, as well as the redwood parks of Henry Cowell, are browsers, a substrata of herbivorous animals which specialise in eating leaves, fruits from high growing trees, as well as soft shoots, shrubs and such.</p>
+
+		    <h3>Fun Fact</h3>
+
+		    <p>The black-tailed deer communicates with each other using more than 10 separate vocalizations.</p>
+
+		    <h5>Works Cited:</h5>
+
+		    <p>““Columbian Black-Tailed Deer (Mammals of Ano Nuevo State Park) · INATURALIST.” INaturalist, <a href="url">https://www.inaturalist.org/guide_taxa/419049.</a></p>
+
+		</div>
+
+		<div id = "coyote-div" class = "centered-coyote boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+			<h1>Coyote</h1>
+
+		    <p>Also known as Canis Latrans, coyotes are highly adaptive animals which change their diets, breeding, as well as social habits based on their environment. Typically, they are opportunistic predators which scavenge for whatever food source they may find; small critters, fruits, animals, even human food and trash. They hunt in pairs, and live in packs of up to half a dozen adult coyotes, and are native to the Santa Cruz mountains.</p>
+
+		    <h3>Fun Fact</h3>
+
+		    <p>Coyotes can run up to 40 MPH when chasing prey.</p>
+
+		    <h5>Works Cited:</h5>
+
+		    <p>“General Information about Coyotes.” General Information About Coyotes | Urban Coyote Research, <a href="url">https://urbancoyoteresearch.com/coyote-info/general-information-about-coyotes</a></p>
+
+		</div>
+
+		<div id = "poison-oak-div" class = "centered-poison-oak boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+			<h1>Pacific Poison Oak</h1>
+
+		    <p>Toxicodendron Diversilobum, the pacific poison oak, or also the western poison oak, is a vine or shrub stemming from the sumac family, Anacardiaceae. They inhabit coniferous forests such as the Henry Cowell Redwoods, and are often a food source of berries and leaves for animals such as deer, birds, and other wildlife. Interestingly enough, they develop a toxic oil on the surface of this plant, called Urushiol which causes contact dermatitis, an allergic reaction with an immediate inflammation of the skin  upon contact with this oil.</p>		    
+
+		    <h3>Fun Fact</h3>
+
+		    <p>About 70% of the population is allergic to Poison Oak, the others can touch it with no reaction.</p>
+
+		    <h5>Works Cited:</h5>
+
+		    <p>“Pacific Poison Oak (U.S. National Park Service).” National Parks Service, U.S. Department of the Interior, <a href="url"> https://www.nps.gov/articles/000/pacific-poison-oak.htm</a></p>
+
+
+		</div>
+
+		<div id = "bay-div" class = "centered-bay boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+			<h1>California Bay</h1>
+
+		    <p>Umbellularia Californica, commonly known as the California Laurel, is an evergreen tree which natively belongs to the various coastal forests of California, existing in altitudes from 0 - 5000 feet. It has a special trait, in which it releases terpenes in order to eliminate competing plants in the surrounding area. </p>
+
+		    <h3>Fun Fact</h3>
+
+		    <p>The early settlers of the West gave this species the nickname “pepperwood”.</p>
+
+		    <h5>Works Cited:</h5>
+
+		    <p> “California Laurel, Umbellularia Californica.” California Native Plant Society, <a href="url">https://calscape.org/Umbellularia-californica-()</a></p>
+
+		</div>
+
+		<div id = "foamflower-div" class = "centered-foamflower boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+
+			<h1>Threeleaf Foamflower</h1>
+
+			<p>Tiarella Trifoliata L., is a type of tiny white flower which grow in loose clusters. There are two speciations of this flower, if the leaves are cut at the stalk, it is the variation trifoliata, and if the leaves are lobed, then it is the unifoliata.</p>
+
+		    <h3>Fun Fact</h3>
+
+		    <p>Foamflower grows symbiotically with species such as Douglas-fir and Western Hemlock.</p>
+
+			<h5>Works Cited:</h5>
+
+		    <p>“Plant Database.” Lady Bird Johnson Wildflower Center - The University of Texas at Austin, <a href="url"> https://www.wildflower.org/plants/result.php?id_plant=TITR</a></p>
+
+		</div>
+												
+	</div>
+
+</body>

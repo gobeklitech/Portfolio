@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+
+<style>
+	
+	body {
+  		background-color: black;
+	}
+
+	img {
+		cursor: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg'), auto;
+	}
+
+	.centered {
+
+	  position: absolute;
+	  top: 55%;
+	  left: 55%;
+	  transform: translate(-50%, -50%);
+	}
+
+	.boxstyle { 
+
+		color: #2f4858 !important;
+  		background-color: #e2cfea !important;
+  		font-family: Trebuchet MS, sans-serif !important;
+
+	 };
+
+</style>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Biomes of Santa Cruz (Map Page)</title>
+
+		<script src="../js/project.js" defer></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	</head>
+
+<body>
+
+	<div>
+
+		<img id = "background-image" src="../img/map-labeled.png" alt="Workplace" usemap="#mymap" onclick="contentHide()">
+
+		<map name = "mymap">
+
+			<area id = "test" shape="poly" coords="640 , 440 , 580 , 350 , 665, 280 , 767 , 255 , 756 , 208 , 798 , 240 , 847 , 208 , 897 , 148 , 981 , 175 , 1018 , 271 , 1040 , 294 , 1127 , 278 , 1186 , 415 , 1065 , 531 , 980 , 413 , 880 , 400 , 839 , 443 , 754 , 413 , 703 , 451" href="../wetlands/wetlands.html">
+
+			<area id = "test" shape="poly" coords="754 , 204 , 857 , 0 , 1208 , 0 , 1250 , 269 , 1408 , 332 , 1354 , 415 , 1128 , 356 , 1152 , 325 , 1129 , 275 , 1022 , 285 , 1011 , 205 , 905 , 146 , 807 , 240" href="../redwoods/redwoods.html">
+
+			<area id = "test" shape="poly" coords="1140 , 680 , 1070 , 535 , 1158 , 487 , 1191 , 393 , 1354 , 420 , 1385 , 393 , 1556 , 515 , 1538 , 644 , 1413 , 712 , 1377 , 664 , 1272 , 752" href="../sandhill/sandhill.html">
+
+		</map>
+
+		<div id = "intro-div" class = "centered boxstyle" style = "border-radius: 8px; background: white; padding: 10px; border: 2px solid">
+
+		    <h1>Project Introduction</h1>
+
+		    <hr>
+
+		    <p>Welcome to our Santa Cruz biomes project! Through our website you will be guided through various biomes that can be found in Santa Cruz county. You will begin with a map of the area then from there you may choose whichever biome that interests you and our site will take you to a page that shows you that chosen biome's habitat and the living organisms you may find there. You will be able to hover over any of the plants or animals you see to find out more about them. Through this website we hope to give you the experience of what it is like in each biome as if you were actually there, as well as providing an educational experience of the species that live there.</p>
+
+		    <p>There is also a <strong>sound</strong> component to our site. If you choose, you will be played a Field Recording from each biome. Exploring with sound is our recommendation, so please make sure your volume is up, or even better go grab some headphones!</p>
+
+		    <br>
+
+		    <p><strong>Click anywhere outside this box to continue.</strong></p>
+
+<!-- 		    <div class="btn-group">
+
+			    <Button type="button" id = "start-button-sound-on" name="start-button-sound-on">Explore with sound ON</Button>
+
+			    <Button type="button" id = "start-button-sound-off" name="start-button-sound-off">Explore with sound OFF</Button>
+
+			</div>
+ -->
+			<br>
+
+		</div>
+		
+	</div>
+
+</body>
